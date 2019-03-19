@@ -2,7 +2,7 @@
 * @Author: kyle.jhan
 * @Date:   2019-03-19 12:19:04
 * @Last Modified by:   kyle.jhan
-* @Last Modified time: 2019-03-19 17:35:05
+* @Last Modified time: 2019-03-19 18:37:31
 */
 
 @charset "UTF-8";
@@ -162,7 +162,7 @@ ul li {
 /*-----------------------------------------------------------------------------------*/
 
 .fullscreenbanner-container {
-    width: 100% !important;
+    width: 750px !important;
     position: relative;
     padding: 0;
 }
