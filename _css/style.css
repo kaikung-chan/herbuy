@@ -1,0 +1,307 @@
+/*
+* @Author: kyle.jhan
+* @Date:   2019-03-19 12:19:04
+* @Last Modified by:   kyle.jhan
+* @Last Modified time: 2019-03-19 17:35:05
+*/
+
+@charset "UTF-8";
+
+
+/* charset 很重要不然有中文無法編譯 */
+
+
+/*-----------------------------------------------------------------------------------*/
+
+
+/*  RESET
+/*-----------------------------------------------------------------------------------*/
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus {
+    outline: 0 !important
+}
+
+.fit-vids-style {
+    display: none
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+}
+
+iframe {
+    border: none
+}
+
+::selection {
+    background: #fbddcd;
+    /* 文字選取顏色 */
+    /* Safari */
+    color: #2f2f2f;
+}
+
+::-moz-selection {
+    background: #fbddcd;
+    /* 文字選取顏色 */
+    /* Firefox */
+    color: #2f2f2f;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*  01.基本樣式
+/*-----------------------------------------------------------------------------------*/
+
+body {
+    font-family: "微軟正黑體", 'Microsoft JhengHei', sans-serif;
+    overflow-x: hidden;
+    background-color: #fbfbfb;
+    color: #2f2f2f;
+    font-size: 14px;
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+}
+
+.container {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+body,
+li,
+address {
+    line-height: 24px
+}
+input,
+button,
+select,
+textarea {
+    font-family: "微軟正黑體", 'Microsoft JhengHei', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+}
+p {
+    margin: 0 0 15px
+}
+a {
+    -webkit-transition: all 200ms ease-in;
+    -o-transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+}
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    color: #2e2e2e;
+    margin-bottom: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+h1 {
+    font-size: 26px;
+    line-height: 35px;
+}
+h2 {
+    font-size: 20px;
+    line-height: 30px;
+}
+h3 {
+    font-size: 16px;
+    line-height: 22px;
+}
+h4 {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 8px;
+}
+h5 {
+    font-size: 13px;
+    line-height: 17px;
+}
+h6 {
+    font-size: 12px;
+    line-height: 16px;
+}
+
+p {
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+ul li {
+    list-style: none;
+}
+
+/*-----------------------------------------------------------------------------------*/
+
+
+/*	09. REVOLUTION SLIDER
+/*-----------------------------------------------------------------------------------*/
+
+.fullscreenbanner-container {
+    width: 100% !important;
+    position: relative;
+    padding: 0;
+}
+
+.revolution {
+    z-index: 998
+}
+
+.revolution ul {
+    visibility: hidden;
+    margin: 0;
+    list-style: none;
+}
+
+.tp-caption a {
+    color: #28b8d8
+}
+
+.tp-caption a:hover {
+    color: #2e2e2e !important
+}
+
+.tp-caption.large {
+    font-size: 54px;
+    line-height: 1;
+    color: #2e2e2e;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.tp-caption.small {
+    font-size: 20px;
+    line-height: 1;
+    color: #2f2f2f;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.tp-caption.lite {
+    color: #FFF !important
+}
+
+.tp-caption a.btn {
+    color: #fff;
+    margin: 0;
+}
+
+.tp-leftarrow.default,
+.tp-rightarrow.default {
+    z-index: 100;
+    cursor: pointer;
+    position: relative;
+    top: 50% !important;
+    -webkit-transition: all 200ms ease-in;
+    -o-transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+    background: none;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1;
+    font-size: 40px;
+    padding: 0;
+    width: auto;
+    height: auto;
+}
+
+.tparrows:before {
+    font-family: 'budicon';
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    display: inline-block;
+    text-decoration: inherit;
+    text-align: center;
+}
+
+.tp-leftarrow.default:before {
+    content: '\e00c'
+}
+
+.tp-rightarrow.default:before {
+    content: '\e010'
+}
+
+.tparrows:hover {
+    color: rgba(255, 255, 255, 1)
+}
+
+.tp-bullets {
+    bottom: 30px !important
+}
+
+.tp-bullets.simplebullets.round .bullet {
+    width: 12px;
+    height: 12px;
+    margin-left: 4px;
+    -webkit-transition: all 200ms ease-in;
+    -o-transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.tp-bullets.simplebullets.round .bullet.selected,
+.tp-bullets.simplebullets.round .bullet:hover {
+    background: rgba(255, 255, 255, 0.6)
+}
+
+.tp-bullets.hidebullets {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -moz-opacity: 0;
+    -khtml-opacity: 0;
+    opacity: 0;
+}
+
+.tp-loader.spinner0 {
+    background: none !important;
+    height: 36px;
+    width: 36px;
+    -webkit-animation: rotation .8s infinite linear;
+    -moz-animation: rotation .8s infinite linear;
+    -o-animation: rotation .8s infinite linear;
+    animation: rotation .8s infinite linear;
+    border-left: 3px solid rgba(84, 157, 197, .15);
+    border-right: 3px solid rgba(84, 157, 197, .15);
+    border-bottom: 3px solid rgba(84, 157, 197, .15);
+    border-top: 3px solid rgba(84, 157, 197, .8);
+    border-radius: 100%;
+    margin: -18px -18px;
+    top: 50%;
+    left: 50%;
+    z-index: 1000;
+    position: absolute;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+.tp-bannertimer {
+    width: 100%;
+    height: 10px;
+    background: url(style/images/timer.png);
+    position: absolute;
+    z-index: 200;
+}
