@@ -2,7 +2,7 @@
 * @Author: kyle.jhan
 * @Date:   2019-03-19 12:19:04
 * @Last Modified by:   kyle.jhan
-* @Last Modified time: 2019-03-19 18:37:31
+* @Last Modified time: 2019-03-21 17:17:39
 */
 
 @charset "UTF-8";
@@ -68,18 +68,14 @@ iframe {
 body {
     font-family: "微軟正黑體", 'Microsoft JhengHei', sans-serif;
     overflow-x: hidden;
-    background-color: #fbfbfb;
+    /*background-color: #aaa;*/
+    background-color: #efefef;
     color: #2f2f2f;
     font-size: 14px;
     font-weight: normal;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -webkit-text-size-adjust: 100%;
-}
-
-.container {
-    padding-right: 0;
-    padding-left: 0;
 }
 
 body,
@@ -96,7 +92,7 @@ textarea {
     font-weight: normal;
 }
 p {
-    margin: 0 0 15px
+    margin: 0;
 }
 a {
     -webkit-transition: all 200ms ease-in;
@@ -113,195 +109,262 @@ h3,
 h4,
 h5,
 h6 {
-    margin-top: 0;
+    margin-top: 0px;
+    margin-bottom: 0px;
     color: #2e2e2e;
-    margin-bottom: 10px;
-    font-weight: 700;
+    font-weight: bold;
     text-transform: uppercase;
 }
 h1 {
     font-size: 26px;
-    line-height: 35px;
+    line-height: 26px;
 }
 h2 {
     font-size: 20px;
-    line-height: 30px;
+    line-height: 20px;
 }
 h3 {
     font-size: 16px;
-    line-height: 22px;
+    line-height: 16px;
 }
 h4 {
     font-size: 14px;
-    line-height: 20px;
-    margin-bottom: 8px;
+    line-height: 14px;
 }
 h5 {
     font-size: 13px;
-    line-height: 17px;
+    line-height: 13px;
 }
 h6 {
     font-size: 12px;
-    line-height: 16px;
+    line-height: 12px;
 }
 
 p {
     line-height: 20px;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: normal;
 }
 
 ul li {
     list-style: none;
 }
 
+.container {
+    margin-top: 10px;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+
+
 /*-----------------------------------------------------------------------------------*/
-
-
-/*	09. REVOLUTION SLIDER
+/*  背景
 /*-----------------------------------------------------------------------------------*/
-
-.fullscreenbanner-container {
-    width: 750px !important;
-    position: relative;
-    padding: 0;
+.bg-white {
+    background-color: #fff; 
 }
 
-.revolution {
-    z-index: 998
+/*-----------------------------------------------------------------------------------*/
+/*  文字
+/*-----------------------------------------------------------------------------------*/
+/*  顏色  
+/*----------------------------------------*/
+.text-red {
+    color: #dc3545;
+}
+.text-gray {
+    color: #888;
+}
+.text-secondary {
+    color: #6c757d;
 }
 
-.revolution ul {
-    visibility: hidden;
-    margin: 0;
-    list-style: none;
-}
 
-.tp-caption a {
-    color: #28b8d8
-}
 
-.tp-caption a:hover {
-    color: #2e2e2e !important
-}
+/*  尺寸  
+/*----------------------------------------*/
 
-.tp-caption.large {
-    font-size: 54px;
-    line-height: 1;
-    color: #2e2e2e;
-    text-transform: uppercase;
-    font-weight: 600;
-}
 
-.tp-caption.small {
-    font-size: 20px;
-    line-height: 1;
-    color: #2f2f2f;
-    text-transform: uppercase;
-    font-weight: 400;
-}
-
-.tp-caption.lite {
-    color: #FFF !important
-}
-
-.tp-caption a.btn {
+/*-----------------------------------------------------------------------------------*/
+/*  OWL CAROUSEL
+/*-----------------------------------------------------------------------------------*/
+.owl-theme .owl-controls .owl-nav [class*='owl-'] {
     color: #fff;
-    margin: 0;
-}
-
-.tp-leftarrow.default,
-.tp-rightarrow.default {
-    z-index: 100;
-    cursor: pointer;
-    position: relative;
-    top: 50% !important;
-    -webkit-transition: all 200ms ease-in;
-    -o-transition: all 200ms ease-in;
-    -moz-transition: all 200ms ease-in;
-    background: none;
-    color: rgba(255, 255, 255, 0.6);
+    margin: 0px;
     line-height: 1;
-    font-size: 40px;
-    padding: 0;
+    font-size: 13px;
+    padding: 0px;
     width: auto;
     height: auto;
-}
-
-.tparrows:before {
-    font-family: 'budicon';
-    font-style: normal;
-    font-weight: normal;
-    speak: none;
-    display: inline-block;
-    text-decoration: inherit;
-    text-align: center;
-}
-
-.tp-leftarrow.default:before {
-    content: '\e00c'
-}
-
-.tp-rightarrow.default:before {
-    content: '\e010'
-}
-
-.tparrows:hover {
-    color: rgba(255, 255, 255, 1)
-}
-
-.tp-bullets {
-    bottom: 30px !important
-}
-
-.tp-bullets.simplebullets.round .bullet {
-    width: 12px;
-    height: 12px;
-    margin-left: 4px;
+    background: none;
+    border: 1px solid rgba(255,255,255,0.7);
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
     -webkit-transition: all 200ms ease-in;
     -o-transition: all 200ms ease-in;
     -moz-transition: all 200ms ease-in;
-    background: rgba(255, 255, 255, 0.3);
+}
+.owl-theme .owl-controls .owl-nav [class*='owl-']:hover {
+    background: #fff;
+    color: #2e2e2e;
+    border: 1px solid #fff;
+    text-decoration: none;
+}
+.custom-controls {
+    position: relative
 }
 
-.tp-bullets.simplebullets.round .bullet.selected,
-.tp-bullets.simplebullets.round .bullet:hover {
-    background: rgba(255, 255, 255, 0.6)
-}
-
-.tp-bullets.hidebullets {
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-    -moz-opacity: 0;
-    -khtml-opacity: 0;
-    opacity: 0;
-}
-
-.tp-loader.spinner0 {
-    background: none !important;
-    height: 36px;
-    width: 36px;
-    -webkit-animation: rotation .8s infinite linear;
-    -moz-animation: rotation .8s infinite linear;
-    -o-animation: rotation .8s infinite linear;
-    animation: rotation .8s infinite linear;
-    border-left: 3px solid rgba(84, 157, 197, .15);
-    border-right: 3px solid rgba(84, 157, 197, .15);
-    border-bottom: 3px solid rgba(84, 157, 197, .15);
-    border-top: 3px solid rgba(84, 157, 197, .8);
-    border-radius: 100%;
-    margin: -18px -18px;
-    top: 50%;
-    left: 50%;
-    z-index: 1000;
+.custom-controls .owl-slider-controls {
     position: absolute;
-    box-shadow: none;
-    -webkit-box-shadow: none;
-}
-
-.tp-bannertimer {
     width: 100%;
-    height: 10px;
-    background: url(style/images/timer.png);
+    height: 100%;
+    top: 0;
+    pointer-events: none;
+    -webkit-transition: all 200ms ease-in;
+    -o-transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+    text-align: center;
+}
+.custom-controls .owl-slider-controls .owl-slider-nav [class*='owl-'] {
     position: absolute;
-    z-index: 200;
+    top: 50%;
+    margin-top: -22px;
+    pointer-events: auto;
+    color: rgba(255,255,255,0.6);
+    line-height: 1;
+    font-size: 40px;
+    width: auto;
+    height: auto;
+    background: none;
+    cursor: pointer;
+    -webkit-transition: all 200ms ease-in;
+    -o-transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+}
+.custom-controls .owl-slider-controls .owl-slider-nav [class*='owl-']:hover {
+    color: rgba(255,255,255,1)
+}
+.custom-controls .owl-slider-controls .owl-slider-nav .owl-slider-prev {
+    left: 10px
+}
+.custom-controls .owl-slider-controls .owl-slider-nav .owl-slider-next {
+    right: 10px
+}
+.custom-controls .owl-slider-controls .owl-dots {
+    pointer-events: auto;
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    cursor: pointer;
+}
+.owl-theme .owl-dots .owl-dot span {
+    width: 12px;
+    height: 12px; 
+    margin: 0 3px;
+    -webkit-transition: all 200ms ease-in;
+    -o-transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+    background: rgba(255,255,255,0.6);
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 12px;
+}
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    background: #7abe29;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*  電視牆 tv-bn
+/*-----------------------------------------------------------------------------------*/
+.tv-bn {
+
+}
+.tv-bn-slider img {
+    height: auto
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*  今日驚爆價 today
+/*-----------------------------------------------------------------------------------*/
+.today {
+    padding-left: 15px;
+}
+.today .title {
+    line-height: 50px;
+    padding-left: 15px;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+.today .item {
+    width: 100%;
+
+}
+
+.today .item a{
+    display: block;
+    color: #888;
+    padding: 15px;
+    cursor:pointer;
+
+}
+
+.today .item a:focus,
+.today .item a:hover {
+    color: #000;
+    background-color: #f7f7f7;
+}
+
+.today .content {
+    width: 60%;
+    float: left;
+}
+
+.today span{
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+    font-weight: bold;
+    display: block;
+}
+
+.today img {
+    width: 40%;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,0.05);
+    padding: 2px;
+}
+.today .name {
+    height: 72px;
+    overflow: hidden;
+    word-break: break-all;
+    word-wrap: break-word;
+    padding-right: 15px;
+}
+
+.today .price {
+    font-size: 24px;
+}
+
+
+@media (min-width: 768px) {
+
+}
+@media (min-width: 992px) {
+
+}
+@media (min-width: 1200px) {
+
 }
