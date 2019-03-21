@@ -2,7 +2,7 @@
 * @Author: kyle.jhan
 * @Date:   2019-03-19 12:19:04
 * @Last Modified by:   kyle.jhan
-* @Last Modified time: 2019-03-21 17:17:39
+* @Last Modified time: 2019-03-21 17:40:39
 */
 
 @charset "UTF-8";
@@ -307,18 +307,17 @@ ul li {
     line-height: 50px;
     padding-left: 15px;
     border-bottom: 1px solid rgba(0,0,0,0.05);
+        background-color: #fff;
 }
-.today .item {
-    width: 100%;
+.today .body {
+    background-color: #fff;
+}
 
-}
 
 .today .item a{
-    display: block;
     color: #888;
     padding: 15px;
-    cursor:pointer;
-
+    display: block;
 }
 
 .today .item a:focus,
