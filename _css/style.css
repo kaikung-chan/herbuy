@@ -2,7 +2,7 @@
 * @Author: kyle.jhan
 * @Date:   2019-03-19 12:19:04
 * @Last Modified by:   kyle.jhan
-* @Last Modified time: 2019-03-21 17:40:39
+* @Last Modified time: 2019-03-21 19:27:39
 */
 
 @charset "UTF-8";
@@ -306,17 +306,16 @@ ul li {
 .today .title {
     line-height: 50px;
     padding-left: 15px;
-    border-bottom: 1px solid rgba(0,0,0,0.05);
-        background-color: #fff;
+    background-color: #fff;
+    border-bottom: 1px solid rgba(0,0,0,0.05)
 }
 .today .body {
     background-color: #fff;
 }
 
-
 .today .item a{
     color: #888;
-    padding: 15px;
+    padding: 15px 15px 15px 0;
     display: block;
 }
 
@@ -331,30 +330,46 @@ ul li {
     float: left;
 }
 
-.today span{
-    font-size: 16px;
-    line-height: 24px;
-    text-align: left;
-    font-weight: bold;
-    display: block;
-}
-
 .today img {
     width: 40%;
     background-color: #fff;
     border: 1px solid rgba(0,0,0,0.05);
     padding: 2px;
 }
+
+.today span {
+    text-align: left;
+    font-weight: bold;
+    display: block;
+}
+
+.today .promotion {
+    width: 85%;
+    font-size: 15px;
+    color: #fff;
+    line-height: 30px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: #f15d05;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-bottom: 5px;
+}
+
 .today .name {
-    height: 72px;
+    height: 60px;
+    font-size: 15px;
+    line-height: 20px;
+    padding: 0px 15px;
     overflow: hidden;
     word-break: break-all;
     word-wrap: break-word;
-    padding-right: 15px;
 }
 
 .today .price {
-    font-size: 24px;
+    font-size: 20px;
+    padding-left: 15px; 
+
 }
 
 
