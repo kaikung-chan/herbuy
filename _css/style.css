@@ -2,7 +2,7 @@
 * @Author: kyle.jhan
 * @Date:   2019-03-19 12:19:04
 * @Last Modified by:   kyle.jhan
-* @Last Modified time: 2019-03-21 19:27:39
+* @Last Modified time: 2019-03-26 18:48:31
 */
 
 @charset "UTF-8";
@@ -301,10 +301,11 @@ ul li {
 /*  今日驚爆價 today
 /*-----------------------------------------------------------------------------------*/
 .today {
-    padding-left: 15px;
+    padding-left: 0px;
+    padding-top: 15px;
 }
 .today .title {
-    line-height: 50px;
+    line-height: 40px;
     padding-left: 15px;
     background-color: #fff;
     border-bottom: 1px solid rgba(0,0,0,0.05)
@@ -325,13 +326,8 @@ ul li {
     background-color: #f7f7f7;
 }
 
-.today .content {
-    width: 60%;
-    float: left;
-}
 
 .today img {
-    width: 40%;
     background-color: #fff;
     border: 1px solid rgba(0,0,0,0.05);
     padding: 2px;
@@ -344,12 +340,12 @@ ul li {
 }
 
 .today .promotion {
-    width: 85%;
-    font-size: 15px;
+    width: 90%;
+    font-size: 20px;
     color: #fff;
     line-height: 30px;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 18px;
     background-color: #f15d05;
     padding-right: 15px;
     padding-left: 15px;
@@ -357,28 +353,74 @@ ul li {
 }
 
 .today .name {
-    height: 60px;
-    font-size: 15px;
-    line-height: 20px;
+    height: 90px;
+    font-size: 20px;
+    line-height: 30px;
     padding: 0px 15px;
     overflow: hidden;
     word-break: break-all;
-    word-wrap: break-word;
+    text-overflow:ellipsis;
 }
 
 .today .price {
-    font-size: 20px;
+    font-size: 36px;
+    line-height: 48px;
     padding-left: 15px; 
 
 }
 
 
 @media (min-width: 768px) {
+    .today .item a{
+        padding: 8px 15px 8px 0;
+    }
+    .today .promotion {
+        width: 90%;
+        font-size: 15px;
+        color: #fff;
+        line-height: 24px;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        background-color: #f15d05;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-bottom: 5px;
+    }
+    .today .name {
+        height: 40px;
+        font-size: 15px;
+        line-height: 20px;
+        padding: 0px 15px;
+    }
+    .today .price {
+        font-size: 20px;
+        line-height: 30px;
+        padding-left: 15px; 
 
+    }
 }
 @media (min-width: 992px) {
-
+    .today .promotion {
+        width: 70%;
+    }
 }
 @media (min-width: 1200px) {
-
+    .today {
+        padding-left: 15px;
+        padding-top: 0px;
+    }
 }
+
+/*-----------------------------------------------------------------------------------*/
+/*  今日驚爆價 today
+/*-----------------------------------------------------------------------------------*/
+.big-event {
+    background-color: #fff;
+}
+
+.big-event .title {
+    line-height: 40px;
+    padding-left: 15px;
+    border-bottom: 1px solid rgba(0,0,0,0.05)
+}
+
